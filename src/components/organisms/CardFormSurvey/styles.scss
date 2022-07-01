@@ -1,0 +1,204 @@
+/* ==========================================================================
+Styles for Card Form Survey component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin",
+  "../../../assets/styles/project/init/variables";
+
+// Start styles Card Form Survey component
+
+.o-card-form-vertikal {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+    @include small {
+      width: 100%;
+      margin: 0;
+    }
+    &__sidebar{
+      width: 342px;
+      height: 630px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      float: left;
+      &.gray {
+        background-color: #F9F9F9;
+        border: 1px solid #DADADA;
+      }
+      &.white {
+        background-color:color(white);
+      }
+
+      &__text-content-sidebar {
+        width: 100%;
+        display: table;
+        .oval-wrapper{
+          display: table-cell;
+          vertical-align: middle;
+          float: left;
+        }
+        .text-wrapper{
+          display: table-cell;
+          vertical-align: middle;
+          float: left;
+        }
+
+        &--d {
+          display: block;
+          padding: 30px 20px 30px 26px;
+          @include small {
+              display: none;
+          }
+        }
+
+        &--m {
+            display: none;
+            @include small {
+              background-color:color(white);
+              width: 100%;
+              padding: 20px;
+              display: table;
+              .text-left-page {
+                padding-left: 8px;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight:500;
+                font-style: normal;
+              }
+
+              .title-left{
+                color: #00529C;
+                display: table-cell;
+                vertical-align: middle;
+                float: left;
+              }
+              .title-right{
+                display: table-cell;
+                vertical-align: middle;
+                float: right;
+                font-weight: 500;
+              }
+            }
+        }
+
+      }
+
+      @include small {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        height:100px;
+        background-color: color(white);
+        border-radius: 8px;
+      }
+
+      .line-v {
+        margin-left: 11px;
+        border-left: 1px solid #528DE0;
+        height: 20px;
+        @include small {
+          display: none;
+        }
+      }
+
+    }
+
+    &__content{
+      position: relative;
+      padding: 40px;
+      width: 712px;
+      background-color:color(white);
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      @include shadow('on-white');
+      float: left;
+      margin-left: 26px;
+      margin-bottom:5rem;
+
+      h4 {
+        margin-bottom: 4rem;
+        font-weight: 700;
+      }
+
+      .o-input {
+        margin-bottom: 20px;
+        &.r {
+          display: table-cell;
+          vertical-align: middle;
+          @include small {
+            display: block;
+          }
+        }
+        &.l {
+            display: table-cell;
+            vertical-align: middle;
+            @include small {
+              display: block;
+            }
+        }
+      }
+
+      .form-wrapper {
+        display: table;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        @include small {
+          margin-top: 1rem;
+        }
+      }
+
+      .form-relative {
+        margin-top: 1rem;
+        display: block;
+        position: relative;
+        width: 100%;
+        @include small {
+          margin-top: 1rem;
+        }
+      }
+
+      .form-line {
+        border-top: 1px solid #DADADA;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        @include small {
+          margin-top: 4rem;
+        }
+      }
+
+      .button-wrapper {
+          display: table;
+          position: relative;
+          width: 100%;
+          margin-top: 5rem;
+          .a-button {
+              @include small {
+                  margin-top: 1rem;
+              }
+              &.primary {
+                  display: table-cell;
+                  vertical-align: middle;
+                  width: 200px;
+                  float: right;
+                  text-transform: uppercase;
+
+                }
+              &.secondary {
+                  display: table-cell;
+                  vertical-align: middle;
+                  float: left;
+                  text-transform: uppercase;
+
+                }
+          }
+      }
+
+      @include small {
+          padding: 20px;
+          margin-left: 0;
+          width: 100%;
+        }
+    }
+}

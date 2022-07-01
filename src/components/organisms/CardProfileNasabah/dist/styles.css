@@ -1,0 +1,299 @@
+/* ==========================================================================
+Styles for Card Form Profile component
+========================================================================== */
+/* ==========================================================================
+   FUNCTION
+   ========================================================================== */
+/* ==========================================================================
+   MIXIN
+   ========================================================================== */
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+/* ----------------------
+  - COLORS
+  ---------------------- */
+/* ----------------------
+  - FONT
+  ---------------------- */
+/* ----------------------
+  - RADIUS
+  ---------------------- */
+/* ----------------------
+  - SCREEN
+  ---------------------- */
+/* ----------------------
+  - SHADOW
+  ---------------------- */
+/* ----------------------
+  - SPACING
+  ---------------------- */
+/* ----------------------
+  - Z-INDEX
+  ---------------------- */
+.o-card-profile-nasabah {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.o-card-profile-nasabah__sidebar {
+  width: 342px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  float: left;
+}
+.o-card-profile-nasabah__sidebar.gray {
+  background-color: #f9f9f9;
+  border: 1px solid #dadada;
+}
+.o-card-profile-nasabah__sidebar.white {
+  background-color: #fff;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar {
+  width: 100%;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one {
+  width: 100%;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one--d {
+  display: block;
+  padding: 30px 20px 20px 26px;
+  border-bottom: 1px solid #dadada;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile {
+  display: table;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile .a-avatars {
+  display: table-cell;
+  vertical-align: middle;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile .a-avatars img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile .a-avatars {
+    display: none;
+  }
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile .text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile .text-wrapper h4 {
+  margin: 4px 0 0 0;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile .text-wrapper__subs {
+  display: table-row;
+  color: #00529C;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile .text-wrapper__subs {
+    display: none;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.one--d .page-profile .text-wrapper {
+    display: block;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.one--d {
+    display: none;
+  }
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.one--m {
+  display: none;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.one--m {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    display: table;
+  }
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.one--m .text-left-page {
+    padding-left: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.one--m .title-left {
+    color: #00529c;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+  }
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.one--m .title-right {
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+    font-weight: 500;
+  }
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two {
+  width: 100%;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--d {
+  display: block;
+  padding: 30px 20px 20px 26px;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile {
+  display: table;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile .a-avatars {
+  display: table-cell;
+  vertical-align: middle;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile .a-avatars img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile .a-avatars {
+    display: none;
+  }
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile .text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile .text-wrapper h4 {
+  margin: 4px 0 0 0;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile .text-wrapper__subs {
+  display: table-row;
+  color: #00529C;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile .text-wrapper__subs {
+    display: none;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .page-profile .text-wrapper {
+    display: block;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.two--d {
+    display: none;
+  }
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--d .sidebar-menu {
+  margin-bottom: 20px;
+}
+.o-card-profile-nasabah__sidebar__text-content-sidebar.two--m {
+  display: none;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar.two--m {
+    display: block;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__sidebar__text-content-sidebar {
+    display: none;
+  }
+}
+.o-card-profile-nasabah__content-center {
+  position: relative;
+  padding: 40px;
+  width: 712px;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  box-shadow: 4px 8px 32px 0 rgba(32, 32, 35, 0.08);
+  float: left;
+  margin-left: 26px;
+  margin-bottom: 5rem;
+}
+.o-card-profile-nasabah__content-center h4 {
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+.o-card-profile-nasabah__content-center .o-input {
+  margin-bottom: 20px;
+}
+.o-card-profile-nasabah__content-center .o-input.r {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__content-center .o-input.r {
+    display: block;
+  }
+}
+.o-card-profile-nasabah__content-center .o-input.l {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__content-center .o-input.l {
+    display: block;
+  }
+}
+.o-card-profile-nasabah__content-center .form-wrapper {
+  display: table;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__content-center .form-wrapper {
+    margin-top: 1rem;
+  }
+}
+.o-card-profile-nasabah__content-center .button-wrapper {
+  display: table;
+  position: relative;
+  width: 100%;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__content-center .button-wrapper .a-button {
+    display: block;
+  }
+}
+.o-card-profile-nasabah__content-center .button-wrapper .a-button.primary {
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  float: right;
+  text-transform: uppercase;
+}
+.o-card-profile-nasabah__content-center .button-wrapper .a-button.secondary {
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__content-center .button-wrapper {
+    display: block;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-card-profile-nasabah__content-center {
+    height: 100%;
+    padding: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+}

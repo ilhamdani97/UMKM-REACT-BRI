@@ -1,0 +1,56 @@
+/* ==========================================================================
+Styles for Kriteria Score Survey component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function",
+"../../../assets/styles/helper/mixin",
+"../../../assets/styles/project/init/variables";
+
+// Start styles Kriteria Score Survey component
+
+.o-kriteria-survey {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    &__list-wrapper {
+        height: 24px;
+        width: 24px;
+        background-color: #DADADA;
+        border-radius: 50%;
+        margin-top: -2px;
+        padding: 0px 0px 0px -4px;
+        .o--text-body {
+            margin-left: 7px !important
+        }
+    }
+    .o--text-body {
+        margin-left: 10px;
+    }
+
+    &__kriteria_score {
+        position: absolute;
+        right: 0;
+        padding-right: 20px;
+        @include small {
+            padding-right: 10px;
+        }
+    }
+
+    &__chart-info-list-new {
+        height: 24px;
+        width: 24px;
+        background-color: rgba(26, 183, 89, 0.2);
+        border: solid 1px #1AB759;
+        border-radius: 4px;
+    }
+
+    &__chart-info-list-lates {
+        height: 24px;
+        width: 24px;
+        background-color: rgba(218, 218, 218, 0.3);
+        border: solid 1px #DADADA;
+        border-radius: 4px;
+    }
+
+}

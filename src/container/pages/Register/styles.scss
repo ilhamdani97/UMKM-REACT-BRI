@@ -1,0 +1,205 @@
+/* ==========================================================================
+Styles for Register component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin", "../../../assets/styles/project/init/variables";
+
+// Start styles Register component
+
+.o-register {
+    margin-top: -36px;
+    padding-top: 36px;
+    height: 100vh;
+    padding-bottom: 36px !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: color(primary,100);
+    border-bottom-right-radius: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    &__image-wrapper {
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        img {
+            height: 100%;
+            object-fit: cover;
+
+            @include small {
+                margin-top: 74px;
+                height: 260px;
+
+                object-fit: contain;
+            }
+        }
+        &--d {
+            display: block;
+
+            @include small {
+                display: none;
+            }
+        }
+
+        &--m {
+            display: none;
+
+            @include small {
+                display: block;
+            }
+        }
+    }
+    .o-header {
+        display: relative;
+
+        .navigation-button {
+            .login-button {
+                .a-system-icon {
+                    display: none;
+                }
+            }
+            .login-button,
+                .burger-button{
+                    background-color: transparent;
+                }
+        }
+    }
+    .o-footer {
+        > .container {
+            display: table;
+            padding: .8rem 0;
+        }
+        @include mq(896px) {
+            display: table-cell;
+            // padding: 0 2.4rem;
+            padding-left: 24px;
+        }
+    }
+    @include small {
+        border-bottom-right-radius: 140px;
+        // background-image: url('../../../assets/images/banner/banner-login-mobile@4x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        > .container,
+        .col-sm-6 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .login-header {
+        display: inline-block;
+        width: 100%;
+        height: 74px;
+    }
+    .login-title {
+        z-index: 2;
+        width: 100%;
+        padding: 72px 0px;
+        @include small {
+            padding: 24px 36px;
+            width: 85%;
+        }
+        .mobile-only {
+            display: none;
+            @include small {
+                display: block;
+            }
+        }
+        .a-text-conversational-single-liner {
+            margin-bottom: .8rem;
+        }
+        .a-h4 {
+            margin-bottom: 0;
+        }
+      }
+    .container {
+        .row {
+            .col-sm-12 {
+
+                @include mq(1024px) {
+                    // max-height: 648px;
+                }
+                @include mq(1000px) {
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+
+    .title-content {
+        font-size: 16px;
+        line-height: 24px;
+        color: color(white);
+        padding: 8px 0px;
+    }
+    .a-button {
+        margin: 24px 0px;
+        width: 340px;
+
+        @include small {
+            width: 100%;
+        }
+
+    }
+    .o-input {
+        margin-top: 24px;
+        margin-bottom: 8px;
+        input {
+            width: 340px;
+        }
+        @include small {
+            margin-top: 16px;
+            margin-bottom: 0px;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+    .link-section-down {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 536px;
+        @include small {
+            max-width: 100%;
+            display: table;
+        }
+        .a-links {
+            padding-top: 48px;
+            white-space: nowrap;
+            padding-left: 8px;
+            vertical-align: bottom;
+            @include small {
+                padding-top: 4px;
+                padding-left: 0px;
+            }
+        }
+    }
+    .link-section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 536px;
+        @include small {
+            max-width: 100%;
+        }
+        .a-links {
+
+            white-space: nowrap;
+            padding-left: 8px;
+            vertical-align: bottom;
+
+        }
+    }
+}

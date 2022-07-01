@@ -1,0 +1,54 @@
+/* ==========================================================================
+Styles for Card Category Kompetensi component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin",
+  "../../../assets/styles/project/init/variables";
+
+// Start styles Card Category Kompetensi component
+
+.o-card-category-kompetensi {
+    min-height: auto;
+    width: 100%;
+    background-color: color(white);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    @include shadow('on-white');
+
+    &__header-wrapper {
+        padding: 40px;
+        height: 126px;
+        width: 100%;
+
+        .o-score-survey {
+          margin-top: -38px;
+          position: relative;
+          float: right;
+
+          @include small {
+            margin-top: 8px;
+            float: left;
+          }
+        }
+
+        @include small {
+          padding: 20px;
+          height: 160px;
+        }
+    }
+
+    &__content-wrapper {
+        position: relative;
+        // max-height: 600px;
+        padding: 40px;
+        border-top: 1px solid color(gray, 50);
+        @include small {
+          padding: 20px;
+        }
+
+        @include small {
+          padding: 20px;
+        } 
+    }
+}

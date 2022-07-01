@@ -1,0 +1,108 @@
+/* ==========================================================================
+Styles for Input Text Area component
+========================================================================== */
+/* ==========================================================================
+   FUNCTION
+   ========================================================================== */
+/* ==========================================================================
+   MIXIN
+   ========================================================================== */
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+/* ----------------------
+  - COLORS
+  ---------------------- */
+/* ----------------------
+  - FONT
+  ---------------------- */
+/* ----------------------
+  - RADIUS
+  ---------------------- */
+/* ----------------------
+  - SCREEN
+  ---------------------- */
+/* ----------------------
+  - SHADOW
+  ---------------------- */
+/* ----------------------
+  - SPACING
+  ---------------------- */
+/* ----------------------
+  - Z-INDEX
+  ---------------------- */
+.o-input-text-area {
+  position: relative;
+}
+.o-input-text-area .text-title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.o-input-text-area textarea {
+  border: solid 2px #c5d1d8;
+  position: relative;
+  width: auto;
+  height: 100px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #73808C;
+  border-radius: 4px;
+  text-indent: 10px;
+}
+.o-input-text-area textarea.small {
+  width: 248px !important;
+}
+@media only screen and (max-width: 896px) {
+  .o-input-text-area textarea.small {
+    min-width: 100%;
+  }
+}
+.o-input-text-area textarea.half {
+  width: 50% !important;
+}
+@media only screen and (max-width: 896px) {
+  .o-input-text-area textarea.half {
+    min-width: 100%;
+  }
+}
+.o-input-text-area textarea.default {
+  width: 344px !important;
+}
+@media only screen and (max-width: 896px) {
+  .o-input-text-area textarea.default {
+    min-width: 100%;
+  }
+}
+.o-input-text-area textarea.extra-small {
+  width: 200px !important;
+}
+@media only screen and (max-width: 896px) {
+  .o-input-text-area textarea.extra-small {
+    min-width: 100%;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-input-text-area textarea {
+    min-width: 100%;
+  }
+}
+.o-input-text-area textarea.width-full {
+  width: 100% !important;
+}
+.o-input-text-area.title-black .text-title {
+  color: #121f26;
+}
+.o-input-text-area.input-gray textarea {
+  color: #171A1C;
+  background-color: #F1F3F5;
+}
+.o-input-text-area.input-red input {
+  border: 2px solid red;
+  color: #171A1C;
+  background-color: #F1F3F5;
+}
+.o-input-text-area .o--text-body {
+  margin-top: 4px;
+}

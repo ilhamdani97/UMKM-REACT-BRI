@@ -1,0 +1,35 @@
+/* ==========================================================================
+Styles for More All component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin",
+  "../../../assets/styles/project/init/variables";
+
+// Start styles Input component
+
+.o-more-all {
+  display: table;
+  width:100%;
+    &__wrapper{
+      padding-top: 40px 0 !important;
+    }
+
+    .text__wrapper{
+      display: table-cell;
+      vertical-align: middle;
+      float: left;
+    }
+
+    .button__wrapper{
+      display: table-cell;
+      vertical-align: middle;
+      float: right;
+      @include small {
+        display:none;
+      }
+
+    }
+
+}
+

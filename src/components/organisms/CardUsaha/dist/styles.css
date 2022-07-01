@@ -1,0 +1,131 @@
+/* ==========================================================================
+Styles for Card Usaha component
+========================================================================== */
+/* ==========================================================================
+   FUNCTION
+   ========================================================================== */
+/* ==========================================================================
+   MIXIN
+   ========================================================================== */
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+/* ----------------------
+  - COLORS
+  ---------------------- */
+/* ----------------------
+  - FONT
+  ---------------------- */
+/* ----------------------
+  - RADIUS
+  ---------------------- */
+/* ----------------------
+  - SCREEN
+  ---------------------- */
+/* ----------------------
+  - SHADOW
+  ---------------------- */
+/* ----------------------
+  - SPACING
+  ---------------------- */
+/* ----------------------
+  - Z-INDEX
+  ---------------------- */
+.o-card-usaha {
+  width: 100%;
+  height: 186px;
+  border-radius: 8px;
+  background-color: #00427D;
+  -webkit-border-radius: 8px;
+  display: table;
+  box-shadow: 4px 8px 32px 0 rgba(32, 32, 35, 0.08);
+}
+@media only screen and (max-width: 896px) {
+  .o-card-usaha {
+    margin-bottom: 20px;
+    height: 100%;
+  }
+}
+.o-card-usaha__image-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  width: 274px;
+  height: 186px;
+  left: 0;
+}
+.o-card-usaha__image-wrapper img {
+  height: 100%;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-usaha__image-wrapper img {
+    height: 80%;
+  }
+}
+.o-card-usaha__image-wrapper--d {
+  display: block;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-usaha__image-wrapper--d {
+    display: none;
+  }
+}
+.o-card-usaha__image-wrapper--m {
+  display: none;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-usaha__image-wrapper--m {
+    display: block;
+  }
+}
+.o-card-usaha__text-wrapper {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.o-card-usaha__text-wrapper h4 {
+  margin-bottom: 8px;
+}
+.o-card-usaha__text-wrapper .text-wrapper-contact {
+  display: table;
+}
+.o-card-usaha__text-wrapper .text-wrapper-contact .r {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 14px;
+}
+.o-card-usaha__text-wrapper .text-wrapper-contact .r i {
+  font-size: 20px;
+  color: #fff;
+}
+.o-card-usaha__text-wrapper .text-wrapper-contact .l {
+  display: table-cell;
+  vertical-align: middle;
+}
+.o-card-usaha__text-wrapper .text-wrapper-contact--d {
+  display: block;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-usaha__text-wrapper .text-wrapper-contact--d {
+    display: none;
+  }
+}
+.o-card-usaha__text-wrapper .text-wrapper-contact--m {
+  display: none;
+}
+@media only screen and (max-width: 896px) {
+  .o-card-usaha__text-wrapper .text-wrapper-contact--m {
+    display: block;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-card-usaha__text-wrapper {
+    padding: 0px 20px 20px 20px;
+    display: block;
+  }
+}

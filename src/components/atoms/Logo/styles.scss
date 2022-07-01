@@ -1,0 +1,30 @@
+/* ==========================================================================
+Styles for Logo component
+========================================================================== */
+
+// import mixin and variables
+@import
+"../../../assets/styles/helper/function",
+"../../../assets/styles/helper/mixin",
+"../../../assets/styles/project/init/variables";
+
+// Start styles Logo component
+
+.a-logo {
+    display: inline-block;
+    &.bri-white {
+      width: 38.5rem;
+      height: 9.6rem;
+      background: url('../../../assets/images/logo/bri-white.png') left top / 100% auto no-repeat;
+    }
+    &.gpn {
+      width: 7.3rem;
+      height: 4rem;
+    //   background: url('../../../assets/images/logo/gpn.png') left top / auto 100% no-repeat;
+    }
+    &.ojk {
+      width: 7.3rem;
+      height: 4rem;
+    //   background: url('../../../assets/images/logo/ojk.png') left top / 100% auto no-repeat;
+    }
+}

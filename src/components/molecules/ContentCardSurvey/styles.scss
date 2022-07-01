@@ -1,0 +1,58 @@
+
+/* ==========================================================================
+Styles for Card Category Kompetensi component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin",
+  "../../../assets/styles/project/init/variables";
+
+// Start styles Card Category Kompetensi component
+
+
+.info-chart-wrapper {
+    position: absolute;
+    margin-right: 40px;
+    right: 0;
+    top: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+
+    &_kriteria-wrapper{
+      .o-kriteria-survey {
+        display: block;
+        margin-right: 40px;
+        margin-left: 16px;
+        @include small {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+      }
+    }
+    .o-kriteria-survey {
+      margin-right: 40px;
+      @include small {
+          display: flex;
+          flex-wrap: nowrap;
+      }
+    }
+    
+    .a-links {
+      display: block;
+      margin-left: 56px;
+      @include small {
+        margin-left: 0;
+        padding-top: 8px;
+      }
+    }
+    @include small {
+      margin-top: 16px;
+      position: relative;
+      display: block;
+    }
+
+    .recharts-wrapper {
+      width: 500px;
+      height: 340px;
+    }
+}

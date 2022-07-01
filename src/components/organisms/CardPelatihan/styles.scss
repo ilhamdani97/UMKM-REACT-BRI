@@ -1,0 +1,107 @@
+/* ==========================================================================
+Styles for Card Pelatihan component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin",
+  "../../../assets/styles/project/init/variables";
+
+// Start styles Card Pelatihan component
+
+.o-card-pelatihan {
+  position: relative;
+  height: 100vh;
+  width: 100vh;
+  background-color: color(white);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  @include shadow('on-white');
+  @include small {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__image-wrapper {
+      width: 100%;
+      height: 284px;
+      position: absolute;
+      overflow: hidden;
+      left: 0;
+      margin-bottom: 40px;
+
+      @include small {
+          position: relative;
+          height: 160px;
+      }
+      img {
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+          width: 100%;
+          height: 160px;
+          object-fit: cover;
+
+          @include small {
+            height: 160px;
+          }
+      }
+      &--d {
+          display: block;
+
+          @include small {
+              display: none;
+          }
+      }
+
+      &--m {
+          display: none;
+
+          @include small {
+              display: block;
+          }
+      }
+
+  }
+
+  &__icon-wrapper {
+      padding-top: calc((22% - 37.5px));
+      padding-left: calc((50% - 37.5px));
+      position: relative;
+      height: 160px;
+      @include small {
+        height: 50px;
+        position: absolute;
+        top:0;
+          // display: block;
+      }
+      img {
+        width: 75px;
+        height: 75px;
+
+        @include small {
+            height: 50px;
+        }
+      }
+  }
+
+  &__text-wrapper {
+      padding-top: calc((22% - 37.5px));
+      padding-left: calc((10% - 37.5px));
+      padding-left: 40px;
+      padding-right: 40px;
+
+      position: relative;
+      text-align: left;
+
+      h4{
+        font-size:14px;
+      }
+
+      @include small {
+        padding-top: calc((2% - 37.5px));
+        display: block;
+        h4{
+          font-size:12px;
+        }
+      }
+  }
+}

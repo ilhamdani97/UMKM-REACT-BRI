@@ -1,0 +1,108 @@
+/* ==========================================================================
+Styles for Input component
+========================================================================== */
+/* ==========================================================================
+   FUNCTION
+   ========================================================================== */
+/* ==========================================================================
+   MIXIN
+   ========================================================================== */
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+/* ----------------------
+  - COLORS
+  ---------------------- */
+/* ----------------------
+  - FONT
+  ---------------------- */
+/* ----------------------
+  - RADIUS
+  ---------------------- */
+/* ----------------------
+  - SCREEN
+  ---------------------- */
+/* ----------------------
+  - SHADOW
+  ---------------------- */
+/* ----------------------
+  - SPACING
+  ---------------------- */
+/* ----------------------
+  - Z-INDEX
+  ---------------------- */
+.o-input {
+  position: relative;
+}
+.o-input .text-title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.o-input input {
+  border: solid 2px #c5d1d8;
+  position: relative;
+  width: auto;
+  height: 46px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #73808C;
+  border-radius: 4px;
+  text-indent: 10px;
+}
+.o-input input.small {
+  width: 248px !important;
+}
+@media only screen and (max-width: 896px) {
+  .o-input input.small {
+    width: 100%;
+  }
+}
+.o-input input.half {
+  width: 50%;
+}
+@media only screen and (max-width: 896px) {
+  .o-input input.half {
+    min-width: 100%;
+  }
+}
+.o-input input.default {
+  width: 344px;
+}
+@media only screen and (max-width: 896px) {
+  .o-input input.default {
+    width: 100%;
+  }
+}
+.o-input input.extra-small {
+  width: 200px;
+}
+@media only screen and (max-width: 896px) {
+  .o-input input.extra-small {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .o-input input {
+    min-width: 100%;
+  }
+}
+.o-input input.width-full {
+  width: 100%;
+}
+.o-input.title-black .text-title {
+  color: #121f26;
+}
+.o-input.input-gray input {
+  color: #171A1C;
+  background-color: #F1F3F5;
+}
+.o-input.input-red input {
+  border: 2px solid red;
+  color: #171A1C;
+  background-color: #F1F3F5;
+}
+.o-input .o--text-body {
+  margin-top: 4px;
+}

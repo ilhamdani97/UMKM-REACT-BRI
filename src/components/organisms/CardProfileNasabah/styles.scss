@@ -1,0 +1,266 @@
+/* ==========================================================================
+Styles for Card Form Profile component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function",
+  "../../../assets/styles/helper/mixin",
+  "../../../assets/styles/project/init/variables";
+
+// Start styles Card Form Survey component
+
+.o-card-profile-nasabah {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  @include small {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  &__sidebar {
+    width: 342px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    float: left;
+    &.gray {
+      background-color: #f9f9f9;
+      border: 1px solid #dadada;
+    }
+    &.white {
+      background-color: color(white);
+    }
+
+    &__text-content-sidebar {
+      width: 100%;
+
+      &.one {
+        width: 100%;
+        &--d {
+          display: block;
+          padding: 30px 20px 20px 26px;
+          border-bottom: 1px solid #dadada;
+          .page-profile {
+            display: table;
+            .a-avatars {
+              display: table-cell;
+              vertical-align: middle;
+              // float: left;
+              // max-width: 64px;
+              img {
+                border-radius: 50%;
+                width: 64px;
+                height: 64px;
+                object-fit: cover;
+              }
+              @include small {
+                display: none;
+              }
+            }
+            .text-wrapper {
+              display: table-cell;
+              vertical-align: middle;
+              padding-left: 20px;
+              // float: right;
+              h4 {
+                margin: 4px 0 0 0;
+              }
+              &__subs {
+                display: table-row;
+                color: color(primary, 100);
+                @include small {
+                  display: none;
+                }
+              }
+              @include small {
+                display: block;
+                padding-left: 0;
+              }
+            }
+          }
+          @include small {
+            display: none;
+          }
+        }
+        &--m {
+          display: none;
+          @include small {
+            background-color: color(white);
+            width: 100%;
+            padding: 20px;
+            display: table;
+            .text-left-page {
+              padding-left: 8px;
+              font-size: 16px;
+              line-height: 20px;
+              font-weight: 500;
+              font-style: normal;
+            }
+
+            .title-left {
+              color: #00529c;
+              display: table-cell;
+              vertical-align: middle;
+              float: left;
+            }
+            .title-right {
+              display: table-cell;
+              vertical-align: middle;
+              float: right;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      &.two {
+        width: 100%;
+        &--d {
+          display: block;
+          padding: 30px 20px 20px 26px;
+          .page-profile {
+            display: table;
+            .a-avatars {
+              display: table-cell;
+              vertical-align: middle;
+              // float: left;
+              // max-width: 64px;
+              img {
+                border-radius: 50%;
+                width: 64px;
+                height: 64px;
+                object-fit: cover;
+              }
+              @include small {
+                display: none;
+              }
+            }
+            .text-wrapper {
+              display: table-cell;
+              vertical-align: middle;
+              padding-left: 20px;
+              // float: right;
+              h4 {
+                margin: 4px 0 0 0;
+              }
+              &__subs {
+                display: table-row;
+                color: color(primary, 100);
+                @include small {
+                  display: none;
+                }
+              }
+              @include small {
+                display: block;
+                padding-left: 0;
+              }
+            }
+          }
+          @include small {
+            display: none;
+          }
+
+          .sidebar-menu {
+            margin-bottom:20px;
+          }
+
+        }
+        &--m {
+          display: none;
+          @include small {
+            display: block;
+          }
+        }
+
+      }
+
+      @include small {
+        display: none;
+      }
+    }
+
+  }
+  &__content-center {
+        position: relative;
+        padding: 40px;
+        width: 712px;
+        background-color: color(white);
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        @include shadow("on-white");
+        float: left;
+        margin-left: 26px;
+        margin-bottom: 5rem;
+
+        h4 {
+          margin-bottom: 4rem;
+          font-weight: 700;
+        }
+
+        .o-input {
+          margin-bottom: 20px;
+          &.r {
+            display: table-cell;
+            vertical-align: middle;
+            @include small {
+              display: block;
+            }
+          }
+          &.l {
+            display: table-cell;
+            vertical-align: middle;
+            @include small {
+              display: block;
+            }
+          }
+        }
+
+        .form-wrapper {
+          display: table;
+          position: relative;
+          width: 100%;
+          margin-bottom: 20px;
+          @include small {
+            margin-top: 1rem;
+          }
+        }
+
+        .button-wrapper {
+          display: table;
+          position: relative;
+          width: 100%;
+          margin-top: 4rem;
+          .a-button {
+              @include small {
+                display: block;
+              }
+              &.primary {
+                  display: table-cell;
+                  vertical-align: middle;
+                  width: 200px;
+                  float: right;
+                  text-transform: uppercase;
+
+                }
+              &.secondary {
+                  display: table-cell;
+                  vertical-align: middle;
+                  float: left;
+                  text-transform: uppercase;
+
+                }
+          }
+          @include small {
+            display: block;
+          }
+      }
+
+        @include small {
+          height:100%;
+          padding: 20px;
+          margin-left: 0;
+          width: 100%;
+        }
+  }
+}

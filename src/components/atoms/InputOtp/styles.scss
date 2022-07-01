@@ -1,0 +1,26 @@
+/* ==========================================================================
+Styles for Input Otp component
+========================================================================== */
+
+// import mixin and variables
+@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin",
+  "../../../assets/styles/project/init/variables";
+
+// Start styles Input Otp component
+
+.o-input-otp {
+    display: table;
+    position: relative;
+    max-width: 300px;
+    .o-input {
+        min-width: 42px !important;
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 8px;
+
+        input {
+            width: 42px !important;
+            text-indent: 12px;
+        }
+    }
+}
